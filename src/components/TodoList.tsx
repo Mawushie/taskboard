@@ -10,7 +10,7 @@ export default function TodoList({ todos, setTodos }: Props) {
   return (
     <div className="flex flex-col  p-4">
       {todos.map((todo) => (
-        <TodoItem todo={todo} key={todo.id} todos={todos} setTodos={setTodos} />
+        <TodoItem todo={todo} key={todo.id} setTodos={setTodos} />
       ))}
     </div>
   );
